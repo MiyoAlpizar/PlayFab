@@ -1,0 +1,6 @@
+framework module Pods_PlayFab {
+  umbrella header "Pods-PlayFab-umbrella.h"
+
+  export *
+  module * { export * }
+}

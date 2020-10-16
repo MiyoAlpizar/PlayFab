@@ -3,19 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B62273CA3E6A9F5817369AB /* Pods_PlayFab.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C714221F626A1D78D74546EB /* Pods_PlayFab.framework */; };
 		A2E17BB32538BD39000B8840 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E17BB22538BD39000B8840 /* AppDelegate.swift */; };
 		A2E17BB52538BD39000B8840 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E17BB42538BD39000B8840 /* SceneDelegate.swift */; };
 		A2E17BB72538BD39000B8840 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E17BB62538BD39000B8840 /* ViewController.swift */; };
 		A2E17BBA2538BD39000B8840 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2E17BB82538BD39000B8840 /* Main.storyboard */; };
 		A2E17BBC2538BD3A000B8840 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2E17BBB2538BD3A000B8840 /* Assets.xcassets */; };
 		A2E17BBF2538BD3A000B8840 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2E17BBD2538BD3A000B8840 /* LaunchScreen.storyboard */; };
+		A2E17BCD2538C0FC000B8840 /* PlayFabHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E17BCC2538C0FC000B8840 /* PlayFabHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4D3AFC96DBBA6EFF7B11CDBC /* Pods-PlayFab.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayFab.release.xcconfig"; path = "Target Support Files/Pods-PlayFab/Pods-PlayFab.release.xcconfig"; sourceTree = "<group>"; };
 		A2E17BAF2538BD39000B8840 /* PlayFab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayFab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2E17BB22538BD39000B8840 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2E17BB42538BD39000B8840 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		A2E17BBB2538BD3A000B8840 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2E17BBE2538BD3A000B8840 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A2E17BC02538BD3A000B8840 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2E17BCC2538C0FC000B8840 /* PlayFabHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayFabHelper.swift; sourceTree = "<group>"; };
+		C714221F626A1D78D74546EB /* Pods_PlayFab.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlayFab.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBE8B28A0ADBB269DDCF2FD4 /* Pods-PlayFab.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayFab.debug.xcconfig"; path = "Target Support Files/Pods-PlayFab/Pods-PlayFab.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B62273CA3E6A9F5817369AB /* Pods_PlayFab.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E4A259EB72DD6CA81C0B343 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C714221F626A1D78D74546EB /* Pods_PlayFab.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2DDD802B93F91064BC3B33E7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DBE8B28A0ADBB269DDCF2FD4 /* Pods-PlayFab.debug.xcconfig */,
+				4D3AFC96DBBA6EFF7B11CDBC /* Pods-PlayFab.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A2E17BA62538BD39000B8840 = {
 			isa = PBXGroup;
 			children = (
 				A2E17BB12538BD39000B8840 /* PlayFab */,
 				A2E17BB02538BD39000B8840 /* Products */,
+				2DDD802B93F91064BC3B33E7 /* Pods */,
+				1E4A259EB72DD6CA81C0B343 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +89,7 @@
 				A2E17BBB2538BD3A000B8840 /* Assets.xcassets */,
 				A2E17BBD2538BD3A000B8840 /* LaunchScreen.storyboard */,
 				A2E17BC02538BD3A000B8840 /* Info.plist */,
+				A2E17BCC2538C0FC000B8840 /* PlayFabHelper.swift */,
 			);
 			path = PlayFab;
 			sourceTree = "<group>";
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A2E17BC32538BD3A000B8840 /* Build configuration list for PBXNativeTarget "PlayFab" */;
 			buildPhases = (
+				84F3651F071B3C10A78E98EE /* [CP] Check Pods Manifest.lock */,
 				A2E17BAB2538BD39000B8840 /* Sources */,
 				A2E17BAC2538BD39000B8840 /* Frameworks */,
 				A2E17BAD2538BD39000B8840 /* Resources */,
+				C9813806CC8D6D0BD343FA0E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,12 +161,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		84F3651F071B3C10A78E98EE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PlayFab-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9813806CC8D6D0BD343FA0E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PlayFab/Pods-PlayFab-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PlayFab/Pods-PlayFab-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PlayFab/Pods-PlayFab-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A2E17BAB2538BD39000B8840 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A2E17BB72538BD39000B8840 /* ViewController.swift in Sources */,
+				A2E17BCD2538C0FC000B8840 /* PlayFabHelper.swift in Sources */,
 				A2E17BB32538BD39000B8840 /* AppDelegate.swift in Sources */,
 				A2E17BB52538BD39000B8840 /* SceneDelegate.swift in Sources */,
 			);
@@ -283,6 +355,7 @@
 		};
 		A2E17BC42538BD3A000B8840 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBE8B28A0ADBB269DDCF2FD4 /* Pods-PlayFab.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +375,7 @@
 		};
 		A2E17BC52538BD3A000B8840 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D3AFC96DBBA6EFF7B11CDBC /* Pods-PlayFab.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
